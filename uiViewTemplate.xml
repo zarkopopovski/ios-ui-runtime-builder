@@ -1,0 +1,97 @@
+<!-- UIButton attributes:
+*	id
+*	width
+*	height
+*	posX
+*	posY
+*	type = Custom / RoundedRect
+* 	rounded = YES / NO
+*	cornerRadius
+*	states = Normal / Highlated / Selected / Disabled
+*	backgroundImageForState
+*	imageForState
+*	titleForState
+*	target
+s*	transform = M_E / M_LOG2E / M_LOG10E / M_LN2 / M_LN10 / M_PI / M_PI_2 / M_PI_4 /
+*			M_1_PI / M_2_PI / M_2_SQRTPI / M_SQRT2 / M_SQRT1_2
+* -- UILabel attributes:
+*	id
+*	width
+*	height
+*	posX
+*	posY
+*	text
+*	transform
+*	textAlignment = Left / Center / Right
+* -- UIView attributes:
+*	id
+*	width
+*	height
+*	posX
+*	posY
+*	backgroundColor
+*	useAlpha
+*	alpha
+*	opaque
+*	transform
+* -- UITextField attributes:
+*	id
+*	width
+*	height
+*	posX
+*	posY
+*	text
+*	textColor
+*	textAlignment
+*	borderStyle = None / Line / Bazel / RoundedRect
+*	background
+*	disabledBackground
+* -- UITextView attributes:
+*	id
+*	width
+*	height
+*	posX
+*	posY
+*	text
+*	editable
+*	textColor
+*	textAlignment
+* -- UIImageView attributes:
+*	image = "image with extension"
+* -- UIToolbar attributes:
+*	id
+*	width
+*	height
+*	posX
+*	posY
+*	barStyle = UIBarStyleBlack / UIBarStyleBlackOpaque / UIBarStyleBlackTranslucent / UIBarStyleDefault
+* -- UIBarButtonItem attributes:
+*	initType = SystemItem / CustomView / Title
+*	buttonStyle =  UIBarButtonItemStyle + (Plain, Bordered, Done)
+*	itemSystemType = UIBarButtonSystemItem + (Done, Cancel, Edit, Save, Add, FlexibleSpace, FixedSpace, 
+*						Compose, Reply, Action, Organize, Bookmarks, Search, 
+*						Refresh, Stop, Camera, Trash, Play, Pause, Rewind, FastForward,
+*						Undo, Redo, PageCurl)
+*	viewType = Image~photo.png / Text~Ok
+*	actionTarget = @
+*
+*
+* -->
+
+<MainView>
+	<UIButton id="btntest" width="100" height="50" posX="50" posY="50" type="Custom" titleForState="Normal~@OK"
+	backgroundImageForState="Normal~@image.png|Highlated~@highlated.png"  
+	imageForState="Normal~@image.png|Highlated~@highlated.png"/>  
+	
+	<UILabel id="titlelabel" width="300" height="50" posX="0" posY="0" text="BlaBla" textAlignment="Center"/> 
+	
+	<UIView id="holder" width="320" height="120" posX="0" posY="120" backgroundColor="Black" useAlpha="YES" alpha="0.5" opaque="YES">
+	
+	
+	
+	</UIView>
+	
+
+
+
+</MainView>

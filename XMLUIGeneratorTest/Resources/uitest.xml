@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MainView>
+    <UIToolbar id="rootbar" posX="0" posY="0" width="320" height="50" barStyle="UIBarStyleBlack">
+       
+        <UIBarButton id="firsttbtn" initType="SystemItem" itemSystemType="Back" actionTarget="voidMethodWithoutParams"/>
+        <UIBarButton id="secondbtn" initType="Custom" viewType="Image~redbox.png"/>
+        <UIBarButton id="thirdbtn" initType="Title" buttonStyle="Done" title="OK" actionTarget="voidMethodWithoutParams:"/>   
+        
+    </UIToolbar>
+	<UIButton id="testbtn" posX="32" posY="32" width="120" height="50" type="RoundedRect" titleForState="Normal~@Test OK" rounded="YES" cornerRadius="0.5" target="actionTarget" imageForState="Normal~bluecirclewhite.png" backgroundImageForState="Normal~redbox.png|Selected~bluecirclewhite.png" transform="M_PI_2"/>
+    <UIButton id="testbtn2" posX="80" posY="80" width="120" height="35" type="RoundedRect" titleForState="Normal~@OK|Highlated~@NO" rounded="YES" cornerRadius="0.2" target="actionTarget" imageForState="Normal~bluecirclewhite.png"/>
+    <UILabel id="testlabel" posX="0" posY="140" width="200" height="50" clearColor="YES" textAllignment="Left" text="THIS IS TEST TEXT FOR THE UILABEL"/>
+    <UITextField id="testtextfield" posX="0" posY="200" width="200" height="50" textAllignment="Left" text="UITextField Test" borderStyle="None"/>
+   <!-- <UITextView id="testtextView" posX="0" posY="300" width="200" height="50" textAllignment="Center" text="UITextView Test" editable="NO"/> -->
+    <UIImageView id="imgview" posX="150" posY="250" width="64" height="64" imageSrc="redbox.png"/>
+</MainView>
